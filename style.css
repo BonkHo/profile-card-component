@@ -23,20 +23,58 @@ body {
     background-repeat: no-repeat;
 }
 
-.container {
-    background: white;
-    margin: 30vh 80vh 30vh 80vh;
-    display: grid;
-    text-align: center;
-    grid-template-rows: repeat(3, 1fr);
+.prof-pic {
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 50%;
+    place-self: center;
 }
 
-.card-top {
-    content: "";
-    color: var(--very-dark-desaturated-blue);
-    width: 30vh;
+.container {
+    background: white;
+    border-radius: 10px;
+    display: grid;
+    text-align: center;
+    margin: 50px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.prof-pic {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.personal-info {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.followers {
+    grid-column: 1;
+    grid-row: 4;
+    font-size: 1rem;
+}
+
+.likes {
+    grid-column: 2;
+    grid-row: 4;
+    font-size: 1rem;
+}
+
+.photos {
+    grid-column: 3;
+    grid-row: 4;
+    font-size: 1rem;
+}
+
+.numbers {
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 .attribution {
     text-align: center;
+    font-size: 1rem;
+    padding-top: 20px;
 }
